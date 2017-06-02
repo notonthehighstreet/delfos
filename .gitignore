@@ -13,3 +13,4 @@
 /*.bundle
 .agignore
 lib/delfos/file_system/pathname.bundle
+*.log
