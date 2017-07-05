@@ -29,7 +29,6 @@ module Delfos
     def ensure_schema!
       Schema.ensure_constraints!(
         "Class"     => "name",
-        "CallStack" => "number",
       )
     end
 

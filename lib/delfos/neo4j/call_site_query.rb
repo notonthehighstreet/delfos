@@ -24,9 +24,6 @@ module Delfos
       # rubocop:disable Metrics/MethodLength
       def calculate_params
         params = {
-          "step_number"                  => @step_number,
-          "stack_uuid"                   => @stack_uuid,
-
           "call_site_file"               => @call_site        .file,
           "call_site_line_number"        => @call_site        .line_number,
 
@@ -79,10 +76,6 @@ module Delfos
             )
 
           MERGE (call_site) - [:CALLS] -> (called_method)
-
-          MERGE (call_stack:CallStack{uuid: {stack_uuid}})
-
-          MERGE (call_stack) - [:STEP {number: {step_number}}] -> (call_site)
       QUERY
     end
   end
