@@ -40,6 +40,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock', '~> 2.3', '>= 2.3.2'
   spec.add_development_dependency 'rake-compiler', '~> 0'
   spec.add_development_dependency "pry-byebug", "~> 3.4", ">= 3.4.0"
-  spec.add_development_dependency "rake", "~> 11.3.0", ">= 11.3.0"
+  spec.add_development_dependency "rake", "~> 12.3.1", ">= 11.3.0"
   spec.add_development_dependency "rspec", "~>3.6.0", ">= 3.6.0"
 end
