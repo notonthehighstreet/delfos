@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "binding_of_caller", "~> 0.7.2", ">= 0.7.0"
+  spec.add_dependency "binding_of_caller", "~> 0.8.0", ">= 0.7.0"
 
   spec.add_development_dependency 'simplecov', '~> 0'
   spec.add_development_dependency 'rspec_junit_formatter', '~> 0.2', '>= 0.2.3'
